@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoteHub</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" style="position:sticky;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="font-weight-bold ml-2" style="font-family: 'Inter', sans-serif;">VoteHub</span>
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="font-family: 'Inter', sans-serif;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="font-family: 'Inter', sans-serif;">Biodata Calon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #0071cc; font-family: 'Inter', sans-serif;">Reminder</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="font-family: 'Inter', sans-serif;">Contact Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+            <img src="assets\search.svg" alt="Search" style="height: 20px;">
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">                      
+    <div class="row pt-5">
+        <div class="col">
+            <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                <div class="timeline-step">
+                    <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 font-weight-bold" style="font-family: 'Inter', sans-serif;">13 November 2023</p>
+                        <p class="h6 text-muted mb-0 mb-lg-0" style="color: black !important;">Penetapan Presiden dan Wakil Presiden</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 font-weight-bold" style="font-family: 'Inter', sans-serif;">28 November 2023 - 10 Februari 2024</p>
+                        <p class="h6 text-muted mb-0 mb-lg-0" style="color: black !important;">Masa Kampanye</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
+                        <div class="inner-circle"></div>
+                        <p class="h6 mt-3 mb-1 font-weight-bold" style="font-family: 'Inter', sans-serif;">12 Desember 2023</p>
+                        <p class="h6 text-muted mb-0 mb-lg-0" style="color: black !important;">Debat Capres Ke-1</p>
+                    </div>
+                </div>
+                <div class="timeline-step mb-0">
+                    <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
+                        <div class="inner-circle " ></div>
+                        <p class="h6 mt-3 mb-1 font-weight-bold" style="font-family: 'Inter', sans-serif;">14 Februari 2024</p>
+                        <p class="h6 text-muted mb-0 mb-lg-0" style="color: black !important;">Pemungutan Suara</p>
+                    </div>
+                </div>
+                <div class="timeline-step mb-0">
+                  <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
+                      <div class="inner-circle " ></div>
+                      <p class="h6 mt-3 mb-1 font-weight-bold" style="font-family: 'Inter', sans-serif;">20 Maret 2024</p>
+                      <p class="h6 text-muted mb-0 mb-lg-0" style="color: black !important;">Pengumuman Rekapitulasi Suara</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container vh-100 d-flex justify-content-center align-items-center pt-5">
+  <div class="card custom-card" data-state="1">
+    <div class="row no-gutters state-1">
+      <div class="col-4">
+        <img src="assets/penetapan.svg" class="thumbnail-img" alt="Thumbnail Image">
+      </div>
+      <div class="col-8">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h5 class="pencalonan-presiden">Penetapan Calon Presiden & Wakil Presiden</h5>
+          <div class="date-text">13 November 2023</div>
+        </div>
+      </div>
+    </div>
+    <div class="additional-content row no-gutters">
+      <div class="col-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63466.73657390455!2d106.76041762167968!3d-6.174777099999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cd1fef1f21%3A0x59beb7b915c0ca8e!2sKantor%20KPU%20Jakarta%20Pusat!5e0!3m2!1sid!2sid!4v1716298605563!5m2!1sid!2sid" width="186" height="186" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+      <div class="col-8 d-flex flex-column justify-content-center">
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <span class="explanation">13 November 2023</span>
+        </div>
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <span class="explanation">10.00 - 12.00</span>
+        </div>
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <span class="explanation">Kantor Pusat KPU</span>
+        </div>
+        <button type="button" class="add-reminder-btn" data-toggle="modal" data-target="#reminderModal">Add Reminder</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container vh-100 d-flex justify-content-center align-items-center pt-5">
+  <div class="card custom-card" data-state="1">
+    <div class="row no-gutters state-1">
+      <div class="col-4">
+        <img src="assets/kampanye.svg" class="thumbnail-img" alt="Thumbnail Image">
+      </div>
+      <div class="col-8">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h5 class="pencalonan-presiden">Masa Kampanye</h5>
+          <div class="date-text">28 November 2023 - 10 Februari 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="additional-content row no-gutters">
+      <div class="col-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32660026.785109565!2d95.80236401650939!3d-2.2215227228207612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c07d7496404b7%3A0xe37b4de71badf485!2sIndonesia!5e0!3m2!1sid!2sid!4v1716299214059!5m2!1sid!2sid" width="186" height="186" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-8 d-flex flex-column justify-content-center">
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <span class="explanation">28 November 2023 - 10 Februari 2024</span>
+        </div>
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <span class="explanation">Mengikuti calon masing masing</span>
+        </div>
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <span class="explanation">Daerah Setempat</span>
+        </div>
+        <button type="button" class="add-reminder-btn" data-toggle="modal" data-target="#reminderModal">Add Reminder</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container vh-100 d-flex justify-content-center align-items-center pt-5">
+  <div class="card custom-card" data-state="1">
+    <div class="row no-gutters state-1">
+      <div class="col-4">
+        <img src="assets/debat1.svg" class="thumbnail-img" alt="Thumbnail Image">
+      </div>
+      <div class="col-8">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h5 class="pencalonan-presiden">Debat Capres Ke-1</h5>
+          <div class="date-text">12 Desember 2023</div>
+        </div>
+      </div>
+    </div>
+    <div class="additional-content row no-gutters">
+      <div class="col-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63466.73657390455!2d106.76041762167968!3d-6.174777099999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cd1fef1f21%3A0x59beb7b915c0ca8e!2sKantor%20KPU%20Jakarta%20Pusat!5e0!3m2!1sid!2sid!4v1716298605563!5m2!1sid!2sid" width="186" height="186" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-8 d-flex flex-column justify-content-center">
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <span class="explanation">12 Desember 2023</span>
+        </div>
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <span class="explanation">19.00 WIB</span>
+        </div>
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <span class="explanation">Kantor KPU, Jalan Imam Bonjol, Jakarta Pusat</span>
+        </div>
+        <button type="button" class="add-reminder-btn" data-toggle="modal" data-target="#reminderModal">Add Reminder</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container vh-100 d-flex justify-content-center align-items-center pt-5">
+  <div class="card custom-card" data-state="1">
+    <div class="row no-gutters state-1">
+      <div class="col-4">
+        <img src="assets/pemungutan.svg" class="thumbnail-img" alt="Thumbnail Image">
+      </div>
+      <div class="col-8">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h5 class="pencalonan-presiden">Pemungutan Suara</h5>
+          <div class="date-text">14 Februari 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="additional-content row no-gutters">
+      <div class="col-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32660026.785109565!2d95.80236401650939!3d-2.2215227228207612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c07d7496404b7%3A0xe37b4de71badf485!2sIndonesia!5e0!3m2!1sid!2sid!4v1716299214059!5m2!1sid!2sid" width="186" height="186" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-8 d-flex flex-column justify-content-center">
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <span class="explanation">14 Februari 2024</span>
+        </div>
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <span class="explanation">07.00 - 13.00 WIB</span>
+        </div>
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <span class="explanation">TPS masing-masing</span>
+        </div>
+        <button type="button" class="add-reminder-btn" data-toggle="modal" data-target="#reminderModal">Add Reminder</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container vh-100 d-flex justify-content-center align-items-center pt-5">
+  <div class="card custom-card" data-state="1">
+    <div class="row no-gutters state-1">
+      <div class="col-4">
+        <img src="assets/rekap.svg" class="thumbnail-img" alt="Thumbnail Image">
+      </div>
+      <div class="col-8">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h5 class="pencalonan-presiden">Pengumuman Rekapitulasi Suara</h5>
+          <div class="date-text">20 Maret 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="additional-content row no-gutters">
+      <div class="col-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63466.73657390455!2d106.76041762167968!3d-6.174777099999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cd1fef1f21%3A0x59beb7b915c0ca8e!2sKantor%20KPU%20Jakarta%20Pusat!5e0!3m2!1sid!2sid!4v1716298605563!5m2!1sid!2sid" width="186" height="186" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-8 d-flex flex-column justify-content-center">
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <span class="explanation">20 Maret 2024</span>
+        </div>
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <span class="explanation">10.00 - Selesai WIB</span>
+        </div>
+        <div class="icon-explanation">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <span class="explanation">Kantor KPU Pusat</span>
+        </div>
+        <button type="button" class="add-reminder-btn" data-toggle="modal" data-target="#reminderModal">Add Reminder</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="reminderModal" tabindex="-1" aria-labelledby="reminderModalLabel" aria-hidden="true" style="justify-content: center; padding-right: 0%;">
+  <div class="modal-dialog">
+      <div class="modal-content" style="width: 400px; height: 252px;">
+          <div class="modal-header">
+              <h5 class="modal-title" id="reminderModalLabel">Add Reminder</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="reminderOptions" id="reminder7days" value="option1">
+                  <label class="form-check-label" for="reminder7days">
+                      Remind me 7 days before (D-7)
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="reminderOptions" id="reminder3days" value="option2">
+                  <label class="form-check-label" for="reminder3days">
+                      Remind me 3 days before (D-3)
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="reminderOptions" id="reminder1day" value="option3">
+                  <label class="form-check-label " for="reminder1day">
+                      Remind me 1 day before (D-1)
+                  </label>
+              </div>
+          </div>
+          <div class="modal-footer" style="justify-content: center;">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary" id="confirmReminder">Set Reminder</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true" style="justify-content: center; padding-right: 0%;">
+  <div class="modal-dialog">
+      <div class="modal-content" style="width: 400px; height: 252px;">
+          <div class="modal-header">
+              <h5 class="modal-title" id="successModalLabel"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <div class="featured-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="text-supporting">
+              <span class="text">Pengingat Berhasil Ditambahkan</span>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="icon-container">
+          <i class="fas fa-check-circle" style="font-size: 50px; color: blue;"></i>
+        </div>
+        <div class="mt-3">
+          <h5>Pengingat Berhasil Ditambahkan</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <canvas id="hasilPemiluChart"></canvas>
+</div>
+<script src="chart.js"></script>
+
+  <footer class="footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="logo">VoteHub</div>
+                <div class="description">
+                    VoteHub adalah sebuah website dimana pengguna <br />
+                    dapat secara mudah mengetahui mengenai calon <br />
+                    dan hasil pemilu.
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="follow-us">Ikuti Kami</div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 text-right">
+                <div class="rights">© 2021 All Rights Reserved</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll('.custom-card').forEach(card => {
+        card.addEventListener('click', function() {
+          card.classList.toggle('expanded');
+        });
+      });
+    });
+
+    document.getElementById('confirmReminder').addEventListener('click', function() {
+    $('#reminderModal').modal('hide');
+    $('#successModal').modal('show');
+  });
+</script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
