@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Vote Hub</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span
+            class="font-weight-bold ml-2"
+            style="font-family: 'Inter', sans-serif"
+            >VoteHub</span
+          >
+        </a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="color: #0071cc; font-family: 'Inter', sans-serif"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="font-family: 'Inter', sans-serif"
+                >Biodata Calon</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="font-family: 'Inter', sans-serif"
+                >Reminder</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="font-family: 'Inter', sans-serif"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-secondary my-2 my-sm-0"
+              type="submit"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <img
+          src="assets\images\5e8b84f8bcc557b81d849ee6b48f0e1dfdbfb1f6.png"
+          class="rounded float-right"
+          alt=""
+        />
+        <h1 class="col-sm-6">
+          <b
+            >Terkukuh Bersama, <span class="text-primary">Suara</span> Demi
+            <span class="text-primary">Masa Depan</span> Yang
+            <span class="text-primary">Bercahaya!</span></b
+          >
+        </h1>
+        <p class="col-sm-6">
+          Dalam satu suara, kita wujudkan perubahan. Pemilu adalah panggung bagi
+          harapan kita semua. Ayo wujudkan masa depan yang kita impikan dengan
+          suara kita. Demokrasi hidup dalam setiap pilihan yang kita buat.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row col justify-content-center">
+          <div class="col-sm">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top img-fluid"
+                src="assets\images\b42ec41585829fe6056bcfd55e9c67c34e170338.png"
+                alt="PASLON1"
+              />
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">PASLON 01</h6>
+                <h5 class="card-title">Anies & Muhaimin</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top img-fluid"
+                src="assets\images\bba8a0c99b1868955eeb8fbbe6a250292180e155.png"
+                alt="PASLON2"
+              />
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">PASLON 02</h6>
+                <h5 class="card-title">Prabowo & Gibran</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top img-fluid"
+                src="assets\images\1e302e275790282f6b2f44fd315c56a04ff090bb.png"
+                alt="PASLON3"
+              />
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">PASLON 03</h6>
+                <h5 class="card-title">Ganjar & Mahfud</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="card" style="width: 26rem">
+            <img
+              class="card-img-top"
+              src="assets\images\4dc584abb62eb7f73c396b1e3883f8b8736db537.png"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="card" style="width: 26rem">
+            <div class="card-body">
+              <h5 class="card-title">Suara Anda Penting!</h5>
+              <p class="card-text">
+                Dalam setiap pemilu, suara Anda memiliki kekuatan untuk
+                menciptakan perubahan. Mari bergabung dalam proses demokrasi dan
+                wujudkan masa depan yang lebih baik bersama-sama. Setiap suara
+                penting. Jadilah bagian dari perubahan.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <h2 class="linimasa mx-auto justify-content-center">LINIMASA</h2>
+          <div class="container-fluid py-5">
+            <div class="row">
+              <div class="col-lg-24">
+                <div class="horizontal-timeline">
+                  <ul class="list-inline items">
+                    <li class="list-inline-item items-list">
+                      <div class="px-4">
+                        <div class="event-date badge bg-info">27/12/23</div>
+                        <h5 class="pt-2">Pencalonan Presiden</h5>
+                        <!-- <p class="text-muted">
+                        Pencalonan Presiden dan Wakil Presiden
+                      </p> -->
+                        <!-- <div>
+                        <a
+                          href="#"
+                          data-mdb-ripple-init
+                          class="btn btn-primary btn-sm"
+                          >Read more</a
+                        >
+                      </div> -->
+                      </div>
+                    </li>
+                    <li class="list-inline-item items-list">
+                      <div class="px-4">
+                        <div class="event-date badge bg-success">
+                          01/01 - 02/02/24
+                        </div>
+                        <h5 class="pt-2">Masa-masa Kampanye</h5>
+                        <!-- <p class="text-muted">
+                        Everyone realizes why a new common language one could
+                        refuse translators.
+                      </p> -->
+                        <!-- <div>
+                        <a
+                          href="#"
+                          data-mdb-ripple-init
+                          class="btn btn-primary btn-sm"
+                          >Read more</a
+                        >
+                      </div> -->
+                      </div>
+                    </li>
+                    <li class="list-inline-item items-list">
+                      <div class="px-4">
+                        <div class="event-date badge bg-danger">05/02/24</div>
+                        <h5 class="pt-2">Debat Capres Pertama</h5>
+                        <!-- <p class="text-muted">
+                        If several languages coalesce the grammar of the
+                        resulting simple and regular
+                      </p>
+                      <div>
+                        <a
+                          href="#"
+                          data-mdb-ripple-init
+                          class="btn btn-primary btn-sm"
+                          >Read more</a
+                        >
+                      </div> -->
+                      </div>
+                    </li>
+                    <li class="list-inline-item items-list">
+                      <div class="px-4">
+                        <div class="event-date badge bg-warning">14/02/24</div>
+                        <h5 class="pt-2">Pemungutan Suara</h5>
+                        <!-- <p class="text-muted">
+                        Languages only differ in their pronunciation and their
+                        most common words.
+                      </p>
+                      <div>
+                        <a
+                          href="#"
+                          data-mdb-ripple-init
+                          class="btn btn-primary btn-sm"
+                          >Read more</a
+                        >
+                      </div> -->
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hasilpemilu">
+          <h2 class="hasil-pemilu mx-auto justify-content-center">
+            HASIL PEMILU 2024
+          </h2>
+          <div class="d-flex justify-content-center">
+          <canvas id="myChart" style="width: 100%; max-width: 700px"></canvas>
+
+          <script>
+            const Utils = {
+              CHART_COLORS: {
+                red: "rgb(255, 99, 132)",
+                orange: "rgb(255, 159, 64)",
+                yellow: "rgb(255, 205, 86)",
+              },
+              numbers: function (config) {
+                const cfg = config || {};
+                const min = cfg.min || 0;
+                const max = cfg.max || 1;
+                const from = cfg.from || [];
+                const count = cfg.count || 8;
+                const decimals = cfg.decimals || 8;
+                const continuity = cfg.continuity || 1;
+                const dfactor = Math.pow(10, decimals) || 0;
+                const data = [];
+                let i, value;
+
+                for (i = 0; i < count; ++i) {
+                  value = (from[i] || 0) + Math.random() * (max - min) + min;
+                  if (Math.random() <= continuity) {
+                    data.push(Math.round(dfactor * value) / dfactor);
+                  } else {
+                    data.push(null);
+                  }
+                }
+
+                return data;
+              },
+              rand: function (min, max) {
+                min = min || 0;
+                max = max || 0;
+                return Math.floor(Math.random() * (max - min + 1) + min);
+              },
+            };
+
+            // const actions = [
+            //   {
+            //     name: "Randomize",
+            //     handler(chart) {
+            //       chart.data.datasets.forEach((dataset) => {
+            //         dataset.data = Utils.numbers({
+            //           count: chart.data.labels.length,
+            //           min: 0,
+            //           max: 100,
+            //         });
+            //       });
+            //       chart.update();
+            //     },
+            //   },
+            //   {
+            //     name: "Add Dataset",
+            //     handler(chart) {
+            //       const data = chart.data;
+            //       const newDataset = {
+            //         label: "Dataset " + (data.datasets.length + 1),
+            //         backgroundColor: [],
+            //         data: [],
+            //       };
+
+            //       for (let i = 0; i < data.labels.length; i++) {
+            //         newDataset.data.push(
+            //           Utils.numbers({ count: 1, min: 0, max: 100 })
+            //         );
+
+            //         const colorIndex = i % Object.keys(Utils.CHART_COLORS).length;
+            //         newDataset.backgroundColor.push(
+            //           Object.values(Utils.CHART_COLORS)[colorIndex]
+            //         );
+            //       }
+
+            //       chart.data.datasets.push(newDataset);
+            //       chart.update();
+            //     },
+            //   },
+            //   {
+            //     name: "Add Data",
+            //     handler(chart) {
+            //       const data = chart.data;
+            //       if (data.datasets.length > 0) {
+            //         data.labels.push("data #" + (data.labels.length + 1));
+
+            //         for (let index = 0; index < data.datasets.length; ++index) {
+            //           data.datasets[index].data.push(Utils.rand(0, 100));
+            //         }
+
+            //         chart.update();
+            //       }
+            //     },
+            //   },
+            //   {
+            //     name: "Remove Dataset",
+            //     handler(chart) {
+            //       chart.data.datasets.pop();
+            //       chart.update();
+            //     },
+            //   },
+            //   {
+            //     name: "Remove Data",
+            //     handler(chart) {
+            //       chart.data.labels.splice(-1, 1); // remove the label first
+
+            //       chart.data.datasets.forEach((dataset) => {
+            //         dataset.data.pop();
+            //       });
+
+            //       chart.update();
+            //     },
+            //   },
+            // ];
+
+            const DATA_COUNT = 3;
+            const NUMBER_CFG = { count: DATA_COUNT, min: 0, max: 100 };
+
+            const data = {
+              labels: ["PASLON 01", "PASLON 02", "PASLON 03"],
+              datasets: [
+                {
+                  label: "Dataset 1",
+                  data: Utils.numbers(NUMBER_CFG),
+                  backgroundColor: Object.values(Utils.CHART_COLORS),
+                },
+              ],
+            };
+
+            const config = {
+              type: "pie",
+              data: data,
+              options: {
+                responsive: true,
+                plugins: {
+                  legend: {
+                    position: "top",
+                  },
+                  title: {
+                    display: true,
+                    text: "Chart.js Pie Chart",
+                  },
+                },
+              },
+            };
+
+            window.onload = function () {
+              const ctx = document.getElementById("myChart").getContext("2d");
+              const myChart = new Chart(ctx, config);
+
+              // Example: Attaching actions to buttons
+              document
+                .getElementById("randomizeData")
+                .addEventListener("click", () => actions[0].handler(myChart));
+              document
+                .getElementById("addDataset")
+                .addEventListener("click", () => actions[1].handler(myChart));
+              document
+                .getElementById("addData")
+                .addEventListener("click", () => actions[2].handler(myChart));
+              document
+                .getElementById("removeDataset")
+                .addEventListener("click", () => actions[3].handler(myChart));
+              document
+                .getElementById("removeData")
+                .addEventListener("click", () => actions[4].handler(myChart));
+            };
+          </script>
+          </div>
+        </div>
+
+        <!-- Add buttons to trigger actions -->
+        <!-- <button id="randomizeData">Randomize Data</button>
+        <button id="addDataset">Add Dataset</button>
+        <button id="addData">Add Data</button>
+        <button id="removeDataset">Remove Dataset</button>
+        <button id="removeData">Remove Data</button> -->
+
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title d-flex justify-content-center">30%</h1>
+              <h6 class="card-subtitle mb-2 text-muted">PASLON 01</h6>
+              <h2 class="card-title d-flex justify-content-center">Anies & Muhaimin</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title d-flex justify-content-center">50%</h1>
+              <h6 class="card-subtitle mb-2 text-muted">PASLON 01</h6>
+              <h2 class="card-title d-flex justify-content-center">Prabowo & Gibran</h2>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title d-flex justify-content-center">20%</h1>
+              <h6 class="card-subtitle mb-2 text-muted">PASLON 01</h6>
+              <h2 class="card-title d-flex justify-content-center">Ganjar & Mahfud</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>VOTEHUB</h2>
+                <p>VoteHub adalah sebuah website dimana pengguna dapat secara mudah mengetahui mengenai calon dan hasil pemilu.</p>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h3>IKUTI KAMI</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023, All Rights Reserved</p>
+        </div>
+      </footer>
+      
+      
+      <!-- Optional JavaScript; choose one of the two! -->
+      
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://kit.fontawesome.com/5a28af3bd4.js"
+        crossorigin="anonymous"
+      ></script>
+
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

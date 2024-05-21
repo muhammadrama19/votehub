@@ -1,0 +1,150 @@
+.navbar-brand span {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .nav-link:hover {
+    color: #2895F2 ;
+  }
+  
+  .nav-link:visited {
+    color: #0071CC ;
+  }
+  
+  .nav-link:active {
+    color: #83C6FF;
+  }
+
+  .jumbotron {
+    padding: 8rem;
+  }
+
+  .card {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 4rem 0 4rem;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+  }
+
+  .horizontal-timeline .items {
+    border-top: 3px solid blue;
+  }
+  
+  .timeline {
+    padding: 8rem;
+  }
+  
+  .horizontal-timeline .items .items-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+  }
+  
+  .horizontal-timeline .items .items-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed blue;
+    top: 0;
+  }
+  
+  .horizontal-timeline .items .items-list .event-date {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    width: 150px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  
+  @media (min-width: 1140px) {
+    .horizontal-timeline .items .items-list {
+      display: inline-block;
+      width: 24%;
+      padding-top: 45px;
+    }
+  
+    .horizontal-timeline .items .items-list .event-date {
+      top: -40px;
+    }
+  }
+
+  .linimasa, .hasilpemilu h2{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    background-color: #003366;
+    color: white;
+    padding-top: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+}
+
+.footer-section {
+    max-width: 50%;
+}
+
+.footer-section h2, .footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section p {
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #002244;
+}
