@@ -29,13 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
     submitFeedback.addEventListener('click', () => {
-      const comment = document.getElementById('feedbackComment').value;
-      if (selectedEmoji && comment) {
-        alert(`Feedback submitted!\nEmoji: ${selectedEmoji}\nComment: ${comment}`);
+       
+        // Display success modal
+        $('#successModal').modal('show');
+
+        // Hide the feedback popup
         feedbackPopup.style.display = 'none';
-      } else {
-        alert('Please select an emoji and leave a comment.');
-      }
+
+        // Optionally, clear the textarea
+        document.getElementById('feedbackComment').value = '';
+
+        // Close the success modal after 2 seconds
+        setTimeout(() => {
+          $('#successModal').modal('hide');
+        }, 2000);
+
     });
   });
   
