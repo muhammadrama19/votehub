@@ -1,0 +1,345 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "Source Han Sans CN", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #eef8ff 0%, #c4e3ff 55%, #83c6ff 100%);
+}
+
+.navbar-brand span {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .nav-link:hover {
+    color: #2895F2 ;
+  }
+  
+  .nav-link:visited {
+    color: #0071CC ;
+  }
+  
+  .nav-link:active {
+    color: #83C6FF;
+  }
+
+  
+  .image-landing {
+    width: 570px;
+    height: 372px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-content {
+    max-width: 570px;
+    margin-left: 20px;
+}
+.custom-card {
+  width: 795px;
+  height: 189px;
+  border-radius: 8px;
+  background: #e7eaee;
+  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.custom-card.expanded {
+  height: 403px;
+}
+
+.thumbnail-img {
+  width: 240px;
+  height: 189px;
+  object-fit: fill;
+  border-radius: 4px;
+}
+
+.pencalonan-presiden {
+  font-family: 'Source Sans Pro', var(--default-font-family);
+  font-size: 41px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #333333;
+}
+
+.date-text {
+  font-family: 'Lato', var(--default-font-family);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: #333333;
+  opacity: 0.6;
+}
+
+
+  .card {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 4rem 0 4rem;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+  }
+
+  .horizontal-timeline .items {
+    border-top: 3px solid blue;
+  }
+  
+  .timeline {
+    padding: 8rem;
+  }
+  
+  .horizontal-timeline .items .items-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+  }
+  
+  .horizontal-timeline .items .items-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed blue;
+    top: 0;
+  }
+  
+  .horizontal-timeline .items .items-list .event-date {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    width: 150px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  
+  @media (min-width: 1140px) {
+    .horizontal-timeline .items .items-list {
+      display: inline-block;
+      width: 24%;
+      padding-top: 45px;
+    }
+  
+    .horizontal-timeline .items .items-list .event-date {
+      top: -40px;
+    }
+  }
+
+  .linimasa, .hasilpemilu h2{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    background-color: #003366;
+    color: white;
+    padding-top: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+}
+
+.footer-section {
+    max-width: 50%;
+}
+
+.footer-section h2, .footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section p {
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #002244;
+}
+
+
+
+.timeline-steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 1rem
+}
+
+@media (min-width:768px) {
+  .timeline-steps .timeline-step:not(:last-child):after {
+      content: "";
+      display: block;
+      border-top: .25rem solid #00316E;
+      width: 3.46rem;
+      position: absolute;
+      left: 7.5rem;
+      top: .3125rem
+  }
+  .timeline-steps .timeline-step:not(:first-child):before {
+      content: "";
+      display: block;
+      border-top: .25rem solid #00316E;
+      width: 3.8125rem;
+      position: absolute;
+      right: 7.5rem;
+      top: .3125rem
+  }
+}
+
+.timeline-steps .timeline-content {
+  width: 10rem;
+  text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+  border-radius: 1.5rem;
+  height: 1rem;
+  width: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00316E
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+  content: "";
+  background-color: #00316E;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  min-width: 3rem;
+  border-radius: 6.25rem;
+  opacity: .5
+}
+
+.visi {
+  text-align: left;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.visi p {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.responsive img{
+  width: 5%;
+  height: auto;
+  margin: 1rem;
+}
+
+.number.responsive {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.vismis {
+  margin: 8rem;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 100px;
+}
+
+.arrows path {
+	stroke: #2994D1;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
