@@ -277,35 +277,62 @@ background: transparent;
   justify-content: center;
   height: 150px;
 }
-      .footer {
-          background: #00316e;
-          color: white;
-          padding: 20px 0;
-      }
-      .footer .logo {
-          font-family: 'Source Sans Pro', sans-serif;
-          font-size: 33px;
-          font-weight: 36px;
-      }
-      .footer .description {
-          font-family: 'Poppins', sans-serif;
-          font-size: 14px;
-          line-height: 14px;
-      }
-      .footer .rights {
-          font-family: 'Source Sans Pro', sans-serif;
-          font-size: 19px;
-          font-weight: 600;
-      }
-      .footer .follow-us {
-          font-family: 'Source Sans Pro', sans-serif;
-          font-size: 18px;
-      }
-      .footer .social-icons a {
-          color: white;
-          margin-right: 16px;
-          font-size: 24px;
-      }
+footer {
+  background-color: #003366;
+  color: white;
+  padding-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 10%;
+}
+
+.footer-section {
+  max-width: 50%;
+}
+
+.footer-section h2, .footer-section h3 {
+  margin-top: 0;
+}
+
+.footer-section p {
+  line-height: 1.6;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #002244;
+}
+
 
       .modal-header .close {
           padding: 0;
