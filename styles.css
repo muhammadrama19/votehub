@@ -159,25 +159,32 @@ padding: 0;
 background: transparent;
 }
 
+.navbar-brand span {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
 .navbar {
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav-link {
-font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .nav-link:hover {
-color: #2895F2 ;
+  color: #2895F2 ;
 }
 
 .nav-link:visited {
-color: #0071CC ;
+  color: #0071CC ;
 }
 
 .nav-link:active {
-color: #83C6FF;
+  color: #83C6FF;
 }
+
 
 
 .timeline-steps {

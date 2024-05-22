@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="icon" type="image/x-icon" href="assets/LOGO-VH.png">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <span
           class="font-weight-bold ml-2"
           style="font-family: 'Inter', sans-serif"
@@ -41,9 +41,9 @@
           <li class="nav-item">
             <a
               class="nav-link"
-              href="#"
+              href="pengingat.html"
               style="font-family: 'Inter', sans-serif"
-              >Reminder</a
+              >Pengingat</a
             >
           </li>
           <li class="nav-item">
@@ -72,6 +72,7 @@
       </div>
     </div>
   </nav>
+  
   <div class="container">                      
     <div class="row pt-5">
         <div class="col">
@@ -330,6 +331,20 @@
   </div>
 </div>
 
+<button type="button" class="btn btn-primary position-sticky" id="feedbackBtn" style="margin-bottom: 10px; margin-left: 10px;">Give Feedback</button>
+<div id="feedbackPopup" class="popup">
+  <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h2>Umpan Balik</h2>
+      <div class="emoji-container">
+          <span class="emoji">😊</span>
+          <span class="emoji">😐</span>
+          <span class="emoji">😞</span>
+      </div>
+      <textarea id="feedbackComment" placeholder="Leave your comment here..."></textarea>
+      <button type="button" class="btn btn-primary"  id="submitFeedback">Submit</button>
+  </div>
+</div>
 
 <div class="modal fade" id="reminderModal" tabindex="-1" aria-labelledby="reminderModalLabel" aria-hidden="true" style="justify-content: center; padding-right: 0%;">
   <div class="modal-dialog">
@@ -342,7 +357,7 @@
           </div>
           <div class="modal-body">
               <div class="form-check">
-                  <input class="form-check-input" type="radio" name="reminderOptions" id="reminder7days" value="option1">
+                  <input class="form-check-input" type="radio" name="reminderOptions" id="reminder7days" value="option1" style="justify-content: center !important;">
                   <label class="form-check-label" for="reminder7days">
                       Remind me 7 days before (D-7)
                   </label>
