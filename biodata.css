@@ -35,7 +35,7 @@ body {
   
   .image-landing {
     width: 570px;
-    height: 372px;
+    height: 430px;
 }
 .content {
     display: flex;
@@ -270,7 +270,7 @@ body {
 }
 
 .visi {
-  text-align: left;
+  /* text-align: left; */
   position: relative;
   margin-top: 5rem;
 }
@@ -302,7 +302,7 @@ body {
 	position: absolute;
 	left: 50%;
 	margin-left: -30px;
-	bottom: 100px;
+	bottom: 55px;
 }
 
 .arrows path {
