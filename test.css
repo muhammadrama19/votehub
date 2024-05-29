@@ -325,21 +325,21 @@ footer {
 }
 
 
-.custom-btn-primary:hover{
+.custom-btn-primary:hover {
     background-color: #2895f2;
 
 }
 
-.custom-btn-primary:active{
+.custom-btn-primary:active {
     background-color: #83c6ff;
 }
 
 
-.custom-btn-secondary:hover{
+.custom-btn-secondary:hover {
     background-color: #f0f0f0;
 }
 
-.custom-btn-primary:active{
+.custom-btn-primary:active {
     background-color: #e7eaee;
 }
 
@@ -353,29 +353,39 @@ footer {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
-  }
-  
-  .emoji {
+}
+
+.emoji-label {
+    text-align: center;
+}
+
+.emoji {
     font-size: 24px;
     cursor: pointer;
-  }
-  
-  textarea {
+}
+
+label {
+    display: block;
+}
+
+
+textarea {
     width: 100%;
     height: 80px;
     margin-bottom: 10px;
-  }
-  
-  #submitFeedback {
+}
+
+#submitFeedback {
     padding: 10px 20px;
     cursor: pointer;
-  }
-  
-  
-  .popup {
+}
+
+
+.popup {
     display: none;
     position: fixed;
-    z-index: 1000; /* Pastikan z-index cukup tinggi */
+    z-index: 1000;
+    /* Pastikan z-index cukup tinggi */
     left: 0;
     top: 0;
     width: 100%;
@@ -383,27 +393,27 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
-  }
-  
-  .popup-content {
+}
+
+.popup-content {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
     width: 300px;
     position: relative;
-  }
-  
-  .close-btn {
+}
+
+.close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 24px;
     cursor: pointer;
-  }
-  
-  
-  .featured-icon {
+}
+
+
+.featured-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -413,27 +423,31 @@ footer {
     border: 8px solid #83c6ff;
     border-radius: 28px;
     margin-bottom: 20px;
-  }
-  .featured-icon .fa-check {
+}
+
+.featured-icon .fa-check {
     color: #fff;
     font-size: 24px;
-  }
-  .text-supporting .text {
+}
+
+.text-supporting .text {
     color: #0f1728;
     font-family: 'Source Sans Pro', var(--default-font-family);
     font-size: 18px;
     font-weight: 600;
     text-align: center;
     margin-top: 16px;
-  }
-  .modal-success {
+}
+
+.modal-success {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 150px;
-  }
-  #feedbackBtn {
+}
+
+#feedbackBtn {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -444,12 +458,12 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     z-index: 1000;
-  }
+}
 
-  #feedbackBtn:hover{
+#feedbackBtn:hover {
     background-color: #2895f2;
-  }
+}
 
-  #feedbackBtn:active{
+#feedbackBtn:active {
     background-color: #83c6ff;
-  }
+}

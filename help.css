@@ -126,16 +126,23 @@ footer {
     margin-bottom: 5px;
 }
 
-
 .emoji-container {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
   }
   
+  .emoji-label {
+    text-align: center;
+  }
+  
   .emoji {
     font-size: 24px;
     cursor: pointer;
+  }
+  
+  label {
+    display: block;
   }
   
   textarea {

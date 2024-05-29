@@ -81,18 +81,27 @@
     
     <button type="button" class="btn btn-primary position-sticky" id="feedbackBtn" style="margin-bottom: 10px; margin-left: 10px;">Give Feedback</button>
     <div id="feedbackPopup" class="popup">
-      <div class="popup-content">
-          <span class="close-btn">&times;</span>
-          <h2>Umpan Balik</h2>
-          <div class="emoji-container">
-              <span class="emoji">😊</span>
-              <span class="emoji">😐</span>
-              <span class="emoji">😞</span>
-          </div>
-          <textarea id="feedbackComment" placeholder="Leave your comment here..."></textarea>
-          <button type="button" class="btn btn-primary"  id="submitFeedback" style="border-radius: 8px; background-color: #38a1ff;" disabled>Submit</button>
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Umpan Balik</h2>
+            <div class="emoji-container">
+                <div class="emoji-label">
+                    <span class="emoji">😊</span>
+                    <label for="happy">Puas</label>
+                </div>
+                <div class="emoji-label">
+                    <span class="emoji">😐</span>
+                    <label for="neutral">Netral</label>
+                </div>
+                <div class="emoji-label">
+                    <span class="emoji">😞</span>
+                    <label for="sad">Kecewa</label>
+                </div>
+            </div>
+            <textarea id="feedbackComment" placeholder="Leave your comment here..."></textarea>
+            <button type="button" class="btn btn-primary"  id="submitFeedback" style="border-radius: 8px; background-color: #38a1ff;" disabled>Submit</button>
+        </div>
       </div>
-  </div>
 
   <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true" style="justify-content: center; padding-right: 0%;">
     <div class="modal-dialog">
