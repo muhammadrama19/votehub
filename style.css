@@ -364,3 +364,11 @@ textarea {
   cursor: pointer;
   z-index: 1000;
 }
+
+#feedbackBtn:hover{
+  background-color: #2895f2;
+}
+
+#feedbackBtn:active{
+  background-color: #83c6ff;
+}
