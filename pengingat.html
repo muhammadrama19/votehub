@@ -520,16 +520,16 @@
                 <span class="emoji">😐</span>
                 <span class="emoji">😞</span>
             </div>
-            <textarea id="feedbackComment" placeholder="Leave your comment here..."></textarea>
-            <button type="button" class="btn btn-primary"  id="submitFeedback" style="border-radius: 8px; background-color: #38a1ff;" >Submit</button>
+            <textarea id="feedbackComment" placeholder="Apakah ada saran yang ingin kamu sampaikan."></textarea>
+            <button type="button" class="btn btn-primary"  id="submitFeedback" style="border-radius: 8px; background-color: #38a1ff;" disabled>Submit</button>
         </div>
     </div>
   
-    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true" style="justify-content: center; padding-right: 0%;">
+    <div class="modal fade" id="successModalFeedback" tabindex="-1" aria-labelledby="successModalFeedbackLabel" aria-hidden="true" style="justify-content: center; padding-right: 0%;">
       <div class="modal-dialog">
           <div class="modal-content" style="width: 400px; height: 252px;">
               <div class="modal-header">
-                  <h5 class="modal-title" id="successModalLabel"></h5>
+                  <h5 class="modal-title" id="successModalFeedbackLabel"></h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
@@ -546,7 +546,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
       
 
     <footer>
@@ -591,6 +590,61 @@
      $('#reminderModal').modal('hide');
      $('#successModal').modal('show');
    });
+
+   document.addEventListener('DOMContentLoaded', () => {
+    const feedbackBtn = document.getElementById('feedbackBtn');
+    const feedbackPopup = document.getElementById('feedbackPopup');
+    const closeBtn = document.querySelector('.close-btn');
+    const emojis = document.querySelectorAll('.emoji');
+    const submitFeedback = document.getElementById('submitFeedback');
+    let selectedEmoji = null;
+  
+    feedbackBtn.addEventListener('click', () => {
+      feedbackPopup.style.display = 'flex';
+    });
+  
+    closeBtn.addEventListener('click', () => {
+      feedbackPopup.style.display = 'none';
+    });
+  
+    window.addEventListener('click', (e) => {
+      if (e.target === feedbackPopup) {
+        feedbackPopup.style.display = 'none';
+      }
+    });
+  
+    emojis.forEach(emoji => {
+      emoji.addEventListener('click', () => {
+        emojis.forEach(e => e.style.backgroundColor = '');
+        emoji.style.backgroundColor = 'lightgray';
+        selectedEmoji = emoji.textContent;
+
+        if (selectedEmoji) {
+          submitFeedback.disabled = false;
+        } else {
+          submitFeedback.disabled = true;
+        }
+      });
+    });
+  
+    submitFeedback.addEventListener('click', () => {
+       
+        // Display success modal
+        $('#successModalFeedback').modal('show');
+
+        // Hide the feedback popup
+        feedbackPopup.style.display = 'none';
+
+        // Optionally, clear the textarea
+        document.getElementById('feedbackComment').value = '';
+
+        // Close the success modal after 2 seconds
+        setTimeout(() => {
+          $('#successModalFeedback').modal('hide');
+        }, 2000);
+
+    });
+  });
  </script>
 
 <script>
